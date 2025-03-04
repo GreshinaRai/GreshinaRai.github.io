@@ -1,0 +1,66 @@
+body {
+    font-family:Cascadia Code;
+    margin: 0;
+    padding: 0;
+    font-size: larger;
+    background-color: lavender;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.carousel {
+    position: relative;
+    overflow:hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5 ease;
+}
+
+.carousel-images img {
+    width: 1000px;
+    height: 1200px;
+}
+
+.description {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    color: white;
+}
+
+section {
+    padding: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.socials a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
