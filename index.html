@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -19,9 +19,14 @@
         </nav>
         <div class="carousel">
             <div class="carousel-images">
-                <img src="image/viber_image_2025-03-02_07-34-05-715.jpg" alt="Image 1">
-                <img src="image/viber_image_2025-03-02_07-34-05-764.jpg" alt="Image 2">
-                <img src="image/viber_image_2025-03-02_07-34-05-669.jpg" alt="Image 3">
+    
+                <img src="C:\Users\Dell\Pictures\chibi.jpg" alt="Image 1">
+                <img src="C:\Users\Dell\Pictures\download.jpeg" alt="Image 2">
+                <img src="C:\Users\Dell\Pictures\cute2.jpg" alt="Image 3">
+
+                <img src="C:\Users\Dell\Pictures\chibi.jpg" alt="Image 1">
+                <img src="C:\Users\Dell\Pictures\download.jpeg" alt="Image 2">
+                <img src="C:\Users\Dell\Pictures\cute2.jpg"alt="Image 3">
             </div>
             <div class="description">
                 <h1>Welcome to My Portfolio</h1>
@@ -29,8 +34,8 @@
             </div>
         </div>
     </header>
-
-    <section id="aboutme">
+    <div class="container">
+    <section class="box" id="aboutme">
         <h2>About Me</h2>
         <p>Creative and detail-oriented web developer,with a passion for delivering innovative solutions. 
             With 5 year of experience in web development, I excel in blending aesthetics with functionality to create impactful designs. 
@@ -39,7 +44,7 @@
         </p>
     </section>
 
-    <section id="education">
+    <section class="box" id="education">
         <h2>Education Qualifications</h2>
         <ul>
             <li>Bachelor of Computer Application - Nesfield Int' College (2018)</li>
@@ -47,32 +52,40 @@
         </ul>
     </section>
 
-    <section id="experience">
+    <section class="box" id="experience">
         <h2>Professional History</h2>
         <ul>
             <li>Web Developer at Leapfrog (2020 - Present)</li>
             <li>Intern at Google (2019 - 2020)</li>
         </ul>
     </section>
+    </div>
+    <div class="Contact">
+        <h2>Contact Us</h2>
+        <p>If you'd like to get in touch, please fill out the form below:</p>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <label for="name">Name: Greshina Rai</label><br>
-            <label for="email">Email:<a href="mailto.raigreshina@gmail.com">raigreshina@gmail.com</a></label><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
             <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send</button>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
         </form>
-    </section>
+    </div>
 
     <footer>
         <p>&copy; 2025 My Portfolio. All rights reserved.</p>
         <div class="socials">
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/your-profile" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/your-username" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/your_username" target="_blank"><i class="fab fa-twitter"></i></a>
         </div>
     </footer>
+     
+    <script src="script.js"></script>
 </body>
 </html>

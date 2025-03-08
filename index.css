@@ -6,6 +6,12 @@ body {
     background-color: lavender;
 }
 
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
 nav {
     background-color: #333;
     color: white;
@@ -21,35 +27,105 @@ nav ul li {
     display: inline;
     margin-right: 20px;
 }
+nav ul li:hover
+{
+    background-color: burlywood;
+    width: 20px;
+}
 nav ul li a {
     color: white;
     text-decoration: none;
 }
 
 .carousel {
+    width: 100%;
     position: relative;
-    overflow: auto;
+    overflow:hidden;
 }
 
 .carousel-images {
     display: flex;
-    transition: transform 0.5 ease;
+    animation: scroll 20s linear infinite;
 }
 
 .carousel-images img {
     width: 1000px;
-    height: 1200px;
+    height: 1000px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-215%); 
+    }
 }
 
 .description {
     position: absolute;
     top: 20%;
     left: 10%;
-    color: white;
+    color: black;
 }
 
 section {
     padding: 10px;
+    transition: transform 0.3s ease;
+    
+}
+
+section:hover{
+    background-color: thistle;
+    transform: translateY(-50px);
+}
+
+.Contact
+{
+    padding-left: 20px;
+}
+
+.Contact:hover{
+    background-color: thistle;
+}
+
+label 
+{
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"], input[type="email"], input[type="message"],select 
+{
+    width: 200px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background-color: darkblue;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100px;
+}
+button[type="submit"]:hover {
+    background-color: blue;
+}
+
+
+.box {
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%;
+    margin: 10px; 
+    background-color: rosybrown;
 }
 
 footer {
