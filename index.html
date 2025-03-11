@@ -36,28 +36,34 @@
     </header>
     <div class="container">
     <section class="box" id="aboutme">
-        <h2>About Me</h2>
+        <div class="clickable" onclick="toggleContent('content1')"><h1>About Me</h1></div>
+        <div id="content1" class="content">
         <p>Creative and detail-oriented web developer,with a passion for delivering innovative solutions. 
             With 5 year of experience in web development, I excel in blending aesthetics with functionality to create impactful designs. 
             Dedicated to continuous improvement and collaboration, I thrive in dynamic environments and embrace new challenges. 
             Explore my portfolio to see how I transform ideas into engaging visual narratives.
         </p>
+        </div>
     </section>
 
     <section class="box" id="education">
-        <h2>Education Qualifications</h2>
+        <div class="clickable" onclick="toggleContent('content2')"><h1>Education</h1></div>
+        <div id="content2" class="content">
         <ul>
             <li>Bachelor of Computer Application - Nesfield Int' College (2018)</li>
             <li>Master of Science in Web Development - ABC University (2020)</li>
         </ul>
+        </div>
     </section>
 
     <section class="box" id="experience">
-        <h2>Professional History</h2>
+        <div class="clickable" onclick="toggleContent('content3')"><h1>Experience</h1></div>
+        <div id="content3" class="content">
         <ul>
             <li>Web Developer at Leapfrog (2020 - Present)</li>
             <li>Intern at Google (2019 - 2020)</li>
         </ul>
+        </div>
     </section>
     </div>
     <div class="Contact">
@@ -86,6 +92,16 @@
         </div>
     </footer>
      
+    <script>
+        function toggleContent(contentId) {
+    const content = document.getElementById(contentId);
+    if (content.style.display === "none" || content.style.display === "") {
+        content.style.display = "block"; 
+    } else {
+        content.style.display = "none"; 
+    }
+}
+    </script>
     <script src="script.js"></script>
 </body>
 </html>

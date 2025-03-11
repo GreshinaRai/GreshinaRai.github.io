@@ -9,7 +9,31 @@ body {
 .container {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    height: 500px; 
+    width: 100%;
     padding: 20px;
+    
+}
+
+.content {
+    display: none; 
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    padding-right: 10px;
+    text-align: center;
+    background-color: pink;
+    width: 450px;
+}
+
+.clickable {
+    cursor: pointer;
+    color: black;
+    padding-bottom: 5px;
+    width: 250px;
+    height: 50px;
+    transition: transform 0.3s ease;
+
 }
 
 nav {
@@ -71,13 +95,11 @@ nav ul li a {
 
 section {
     padding: 10px;
-    transition: transform 0.3s ease;
     
 }
 
 section:hover{
     background-color: thistle;
-    transform: translateY(-50px);
 }
 
 .Contact
